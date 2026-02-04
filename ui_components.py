@@ -272,6 +272,7 @@ class StatisticsScreen(ft.Column):
             )
         ]
 
+    def _big_stat(self, label, value, color):
         return ft.Container(
             content=ft.Column(
                  controls=[
