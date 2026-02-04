@@ -1,5 +1,4 @@
 flet
 matplotlib
 pillow
-arabic-reshaper
 python-bidi
