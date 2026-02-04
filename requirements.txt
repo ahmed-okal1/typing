@@ -1,4 +1,2 @@
-flet
-matplotlib
-pillow
-python-bidi
+flet==0.28.3
+python-bidi==0.6.7
