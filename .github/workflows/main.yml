@@ -1,11 +1,13 @@
 name: Build Flet Windows App
 on:
   push:
-    branches: [ main ] # سيعمل الأكشن عند الرفع على فرع main
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      PYTHONUTF8: 1 # حل مشكلة UnicodeEncodeError
 
     steps:
       - name: Checkout code
@@ -21,11 +23,8 @@ jobs:
         with:
           channel: 'stable'
 
-      - name: Install Dependencies
-        run: |
-          pip install flet
-          # إذا كان لديك مكتبات أخرى أضفها هنا
-          # pip install -r requirements.txt
+      - name: Install Flet
+        run: pip install flet
 
       - name: Build Windows App
         run: flet build windows
