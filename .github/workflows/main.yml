@@ -1,0 +1,37 @@
+name: Build Flet Windows App
+on:
+  push:
+    branches: [ main ] # سيعمل الأكشن عند الرفع على فرع main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install Dependencies
+        run: |
+          pip install flet
+          # إذا كان لديك مكتبات أخرى أضفها هنا
+          # pip install -r requirements.txt
+
+      - name: Build Windows App
+        run: flet build windows
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flet-windows-app
+          path: build/windows
