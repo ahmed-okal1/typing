@@ -64,7 +64,8 @@ class MainMenu(ft.Column):
         on_start_test: Callable, 
         on_manage_texts: Callable,
         on_view_stats: Callable,
-        on_settings: Callable
+        on_settings: Callable,
+        on_resume_quran: Optional[Callable] = None
     ):
         super().__init__()
         self.user_data = user_data
@@ -73,6 +74,7 @@ class MainMenu(ft.Column):
         self.on_manage_texts = on_manage_texts
         self.on_view_stats = on_view_stats
         self.on_settings = on_settings
+        self.on_resume_quran = on_resume_quran
 
         self.horizontal_alignment = ft.CrossAxisAlignment.CENTER
         self.alignment = ft.MainAxisAlignment.CENTER
@@ -100,6 +102,8 @@ class MainMenu(ft.Column):
                 content=ft.Column(
                     controls=[
                         self._menu_button("بدء اختبار جديد / Start Test", ft.Icons.KEYBOARD, "green", self.on_start_test),
+                        # Resume Quran button (only if callback provided)
+                        self._menu_button("استكمال القرآن الكريم / Resume Quran", ft.Icons.BOOK, "orange", self.on_resume_quran) if self.on_resume_quran else ft.Container(),
                         self._menu_button("إدارة النصوص / Manage Texts", ft.Icons.EDIT, "blue", self.on_manage_texts),
                         self._menu_button("الإحصائيات / Statistics", ft.Icons.BAR_CHART, "purple", self.on_view_stats),
                         self._menu_button("الإعدادات / Settings", ft.Icons.SETTINGS, "grey", self.on_settings),
@@ -140,11 +144,12 @@ class MainMenu(ft.Column):
         )
 
 class ResultsScreen(ft.Column):
-    def __init__(self, results: Dict, on_retry: Callable, on_home: Callable):
+    def __init__(self, results: Dict, on_retry: Callable, on_home: Callable, on_next: Optional[Callable] = None):
         super().__init__()
         self.results = results
         self.on_retry = on_retry
         self.on_home = on_home
+        self.on_next = on_next
 
         self.horizontal_alignment = ft.CrossAxisAlignment.CENTER
         self.alignment = ft.MainAxisAlignment.CENTER
@@ -203,6 +208,7 @@ class ResultsScreen(ft.Column):
             
             ft.Row(
                 controls=[
+                    ft.ElevatedButton("البداية التالية / Next Chunk", icon=ft.Icons.NAVIGATE_NEXT, on_click=lambda e: self.on_next(), bgcolor="green", color="white") if self.on_next else ft.Container(),
                     ft.ElevatedButton("إعادة المحاولة / Retry", icon=ft.Icons.REFRESH, on_click=lambda e: self.on_retry()),
                     ft.OutlinedButton("القائمة الرئيسية / Main Menu", icon=ft.Icons.HOME, on_click=lambda e: self.on_home()),
                 ],

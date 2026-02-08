@@ -1,0 +1,107 @@
+{
+  "beginner": [
+    {
+      "id": "en_b_001",
+      "text": "The quick brown fox jumps over the lazy dog",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "en_b_002",
+      "text": "Practice makes perfect",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "en_b_003",
+      "text": "Hello world welcome to typing",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "en_b_004",
+      "text": "Learning to type is fun",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "en_b_005",
+      "text": "Speed and accuracy matter",
+      "difficulty": "beginner"
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "en_i_001",
+      "text": "Education is the most powerful weapon which you can use to change the world",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en_i_002",
+      "text": "Success is not final failure is not fatal it is the courage to continue that counts",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en_i_003",
+      "text": "The only way to do great work is to love what you do",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en_i_004",
+      "text": "Believe you can and you are halfway there",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en_i_005",
+      "text": "The future belongs to those who believe in the beauty of their dreams",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en_custom_5",
+      "text": "The quick brown fox jumps over the lazy dog. Every day is a new opportunity to learn something fresh. Keep your fingers on the home row and maintain a steady rhythm. Success comes to those who practice consistently and never give up on their goals",
+      "difficulty": "intermediate",
+      "custom": true
+    },
+    {
+      "id": "en_custom_6",
+      "text": "The old library was silent, except for the faint sound of turning pages. Sunlight streamed through the dusty windows, illuminating millions of tiny particles dancing in the air. It was a place where time seemed to stand still, offering a sanctuary for anyone seeking knowledge or a quiet escape from the busy world outside",
+      "difficulty": "intermediate",
+      "custom": true
+    }
+  ],
+  "advanced": [
+    {
+      "id": "en_a_001",
+      "text": "In the midst of chaos there is also opportunity and the wise man will find a way to turn obstacles into stepping stones",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "en_a_002",
+      "text": "The greatest glory in living lies not in never falling but in rising every time we fall",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "en_a_003",
+      "text": "Life is what happens when you are busy making other plans so embrace the unexpected",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "en_a_004",
+      "text": "The only impossible journey is the one you never begin so take that first step today",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "en_a_005",
+      "text": "Knowledge is power information is liberating education is the premise of progress in every society",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "en_custom_5",
+      "text": "\"Artificial intelligence is transforming the way we interact with technology. From machine learning algorithms to neural networks, the field is evolving at an unprecedented pace. Understanding these complex systems requires a combination of mathematical logic and creative problem-solving skills. Efficiency and precision are the hallmarks of modern engineering.\"",
+      "difficulty": "advanced",
+      "custom": true
+    },
+    {
+      "id": "en_custom_6",
+      "text": "Order #5429 was processed at 10:30 AM. The total cost, including a 15% discount, came to $149.50. Please contact support@example.com if you have questions. Note: The password must contain at least one special charact",
+      "difficulty": "advanced",
+      "custom": true
+    }
+  ]
+}

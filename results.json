@@ -1,0 +1,727 @@
+[
+  {
+    "language": "english",
+    "text_id": "en_i_001",
+    "difficulty": "intermediate",
+    "wpm": 18.7,
+    "accuracy": 100.0,
+    "speed_score": 19,
+    "accuracy_score": 100,
+    "overall_score": 60,
+    "duration": 48.1,
+    "timestamp": "2026-02-03T18:57:54.816394"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_001",
+    "difficulty": "intermediate",
+    "wpm": 13.4,
+    "accuracy": 80.3,
+    "speed_score": 13,
+    "accuracy_score": 80,
+    "overall_score": 46,
+    "duration": 68.0,
+    "timestamp": "2026-02-03T19:00:02.931824"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_005",
+    "difficulty": "intermediate",
+    "wpm": 19.9,
+    "accuracy": 90.0,
+    "speed_score": 20,
+    "accuracy_score": 90,
+    "overall_score": 55,
+    "duration": 42.2,
+    "timestamp": "2026-02-03T19:06:49.664203"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_001",
+    "difficulty": "intermediate",
+    "wpm": 20.2,
+    "accuracy": 94.7,
+    "speed_score": 20,
+    "accuracy_score": 95,
+    "overall_score": 58,
+    "duration": 45.2,
+    "timestamp": "2026-02-03T19:07:48.052305"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_003",
+    "difficulty": "intermediate",
+    "wpm": 25.1,
+    "accuracy": 79.2,
+    "speed_score": 25,
+    "accuracy_score": 79,
+    "overall_score": 52,
+    "duration": 25.3,
+    "timestamp": "2026-02-03T19:11:23.273625"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_003",
+    "difficulty": "intermediate",
+    "wpm": 10.9,
+    "accuracy": 100.0,
+    "speed_score": 11,
+    "accuracy_score": 100,
+    "overall_score": 56,
+    "duration": 57.2,
+    "timestamp": "2026-02-03T19:12:24.099252"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_002",
+    "difficulty": "intermediate",
+    "wpm": 17.6,
+    "accuracy": 96.8,
+    "speed_score": 18,
+    "accuracy_score": 97,
+    "overall_score": 58,
+    "duration": 62.2,
+    "total_keystrokes": 94,
+    "correct_keystrokes": 91,
+    "incorrect_keystrokes": 3,
+    "timestamp": "2026-02-03T19:28:53.063855"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_001",
+    "difficulty": "intermediate",
+    "wpm": 25.9,
+    "accuracy": 97.5,
+    "speed_score": 26,
+    "accuracy_score": 98,
+    "overall_score": 62,
+    "duration": 35.6,
+    "total_keystrokes": 79,
+    "correct_keystrokes": 77,
+    "incorrect_keystrokes": 2,
+    "timestamp": "2026-02-03T19:30:19.635806"
+  },
+  {
+    "language": "english",
+    "text_id": "ar_i_001",
+    "difficulty": "intermediate",
+    "wpm": 14.5,
+    "accuracy": 100.0,
+    "speed_score": 14,
+    "accuracy_score": 100,
+    "overall_score": 57,
+    "duration": 2.5,
+    "total_keystrokes": 3,
+    "correct_keystrokes": 3,
+    "incorrect_keystrokes": 0,
+    "timestamp": "2026-02-03T19:31:34.952682"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_004",
+    "difficulty": "intermediate",
+    "wpm": 0,
+    "accuracy": 100.0,
+    "speed_score": 0,
+    "accuracy_score": 100,
+    "overall_score": 50,
+    "duration": 0,
+    "total_keystrokes": 0,
+    "correct_keystrokes": 0,
+    "incorrect_keystrokes": 0,
+    "timestamp": "2026-02-03T19:37:17.549367"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_002",
+    "difficulty": "intermediate",
+    "wpm": 18.8,
+    "accuracy": 93.7,
+    "speed_score": 19,
+    "accuracy_score": 94,
+    "overall_score": 56,
+    "duration": 56.9,
+    "total_keystrokes": 95,
+    "correct_keystrokes": 89,
+    "incorrect_keystrokes": 6,
+    "timestamp": "2026-02-03T20:40:13.675415"
+  },
+  {
+    "language": "arabic",
+    "text_id": "ar_i_005",
+    "difficulty": "intermediate",
+    "wpm": 15.2,
+    "accuracy": 86.5,
+    "speed_score": 15,
+    "accuracy_score": 86,
+    "overall_score": 50,
+    "duration": 70.9,
+    "total_keystrokes": 104,
+    "correct_keystrokes": 90,
+    "incorrect_keystrokes": 14,
+    "timestamp": "2026-02-03T20:41:37.496803"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_001",
+    "difficulty": "beginner",
+    "wpm": 12.7,
+    "accuracy": 88.0,
+    "speed_score": 13,
+    "accuracy_score": 88,
+    "overall_score": 50,
+    "duration": 41.7,
+    "total_keystrokes": 50,
+    "correct_keystrokes": 44,
+    "incorrect_keystrokes": 6,
+    "timestamp": "2026-02-03T20:42:53.396581"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_003",
+    "difficulty": "intermediate",
+    "wpm": 24.4,
+    "accuracy": 100.0,
+    "speed_score": 24,
+    "accuracy_score": 100,
+    "overall_score": 62,
+    "duration": 26.0,
+    "total_keystrokes": 53,
+    "correct_keystrokes": 53,
+    "incorrect_keystrokes": 0,
+    "timestamp": "2026-02-03T20:43:45.936784"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_004",
+    "difficulty": "beginner",
+    "wpm": 14.4,
+    "accuracy": 72.7,
+    "speed_score": 14,
+    "accuracy_score": 73,
+    "overall_score": 44,
+    "duration": 20.0,
+    "total_keystrokes": 33,
+    "correct_keystrokes": 24,
+    "incorrect_keystrokes": 9,
+    "timestamp": "2026-02-03T20:47:16.827897"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_003",
+    "difficulty": "beginner",
+    "wpm": 29.4,
+    "accuracy": 100.0,
+    "speed_score": 29,
+    "accuracy_score": 100,
+    "overall_score": 64,
+    "duration": 12.3,
+    "total_keystrokes": 30,
+    "correct_keystrokes": 30,
+    "incorrect_keystrokes": 0,
+    "timestamp": "2026-02-03T20:47:32.684476"
+  },
+  {
+    "language": "arabic",
+    "text_id": "ar_i_001",
+    "difficulty": "intermediate",
+    "wpm": 10.8,
+    "accuracy": 77.0,
+    "speed_score": 11,
+    "accuracy_score": 77,
+    "overall_score": 44,
+    "duration": 74.4,
+    "total_keystrokes": 87,
+    "correct_keystrokes": 67,
+    "incorrect_keystrokes": 20,
+    "timestamp": "2026-02-03T20:48:54.025667"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_005",
+    "difficulty": "beginner",
+    "wpm": 8.5,
+    "accuracy": 90.0,
+    "speed_score": 8,
+    "accuracy_score": 90,
+    "overall_score": 49,
+    "duration": 38.0,
+    "total_keystrokes": 30,
+    "correct_keystrokes": 27,
+    "incorrect_keystrokes": 3,
+    "timestamp": "2026-02-03T20:52:13.112597"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_004",
+    "difficulty": "beginner",
+    "wpm": 12.4,
+    "accuracy": 72.7,
+    "speed_score": 12,
+    "accuracy_score": 73,
+    "overall_score": 42,
+    "duration": 23.2,
+    "total_keystrokes": 33,
+    "correct_keystrokes": 24,
+    "incorrect_keystrokes": 9,
+    "top_missed_keys": [
+      [
+        "n",
+        3
+      ],
+      [
+        "L",
+        2
+      ],
+      [
+        "e",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-03T21:01:04.460703"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_004",
+    "difficulty": "beginner",
+    "wpm": 14.9,
+    "accuracy": 90.0,
+    "speed_score": 15,
+    "accuracy_score": 90,
+    "overall_score": 52,
+    "duration": 21.7,
+    "total_keystrokes": 30,
+    "correct_keystrokes": 27,
+    "incorrect_keystrokes": 3,
+    "top_missed_keys": [
+      [
+        "i",
+        3
+      ]
+    ],
+    "timestamp": "2026-02-03T21:01:33.694630"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_001",
+    "difficulty": "beginner",
+    "wpm": 17.6,
+    "accuracy": 92.0,
+    "speed_score": 18,
+    "accuracy_score": 92,
+    "overall_score": 55,
+    "duration": 31.3,
+    "total_keystrokes": 50,
+    "correct_keystrokes": 46,
+    "incorrect_keystrokes": 4,
+    "top_missed_keys": [
+      [
+        "o",
+        1
+      ],
+      [
+        "v",
+        1
+      ],
+      [
+        "e",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-03T21:02:13.271613"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_002",
+    "difficulty": "intermediate",
+    "wpm": 14.3,
+    "accuracy": 89.5,
+    "speed_score": 14,
+    "accuracy_score": 90,
+    "overall_score": 52,
+    "duration": 71.2,
+    "total_keystrokes": 95,
+    "correct_keystrokes": 85,
+    "incorrect_keystrokes": 10,
+    "top_missed_keys": [
+      [
+        "S",
+        4
+      ],
+      [
+        "s",
+        2
+      ],
+      [
+        "c",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T14:44:02.320990"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_005",
+    "difficulty": "intermediate",
+    "wpm": 14.8,
+    "accuracy": 89.9,
+    "speed_score": 15,
+    "accuracy_score": 90,
+    "overall_score": 52,
+    "duration": 57.4,
+    "total_keystrokes": 79,
+    "correct_keystrokes": 71,
+    "incorrect_keystrokes": 8,
+    "top_missed_keys": [
+      [
+        "f",
+        2
+      ],
+      [
+        "T",
+        1
+      ],
+      [
+        "h",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T14:58:28.706734"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_001",
+    "difficulty": "intermediate",
+    "wpm": 21.1,
+    "accuracy": 97.5,
+    "speed_score": 21,
+    "accuracy_score": 98,
+    "overall_score": 60,
+    "duration": 45.0,
+    "total_keystrokes": 81,
+    "correct_keystrokes": 79,
+    "incorrect_keystrokes": 2,
+    "top_missed_keys": [
+      [
+        "u",
+        1
+      ],
+      [
+        "g",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T14:59:16.533368"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_002",
+    "difficulty": "intermediate",
+    "wpm": 22.1,
+    "accuracy": 93.4,
+    "speed_score": 22,
+    "accuracy_score": 93,
+    "overall_score": 58,
+    "duration": 46.2,
+    "total_keystrokes": 91,
+    "correct_keystrokes": 85,
+    "incorrect_keystrokes": 6,
+    "top_missed_keys": [
+      [
+        "u",
+        1
+      ],
+      [
+        "e",
+        1
+      ],
+      [
+        "s",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T15:01:20.009071"
+  },
+  {
+    "language": "english",
+    "text_id": "en_i_004",
+    "difficulty": "intermediate",
+    "wpm": 24.3,
+    "accuracy": 93.3,
+    "speed_score": 24,
+    "accuracy_score": 93,
+    "overall_score": 58,
+    "duration": 20.7,
+    "total_keystrokes": 45,
+    "correct_keystrokes": 42,
+    "incorrect_keystrokes": 3,
+    "top_missed_keys": [
+      [
+        "e",
+        1
+      ],
+      [
+        "v",
+        1
+      ],
+      [
+        "w",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T15:02:29.273126"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_001",
+    "difficulty": "beginner",
+    "wpm": 21.1,
+    "accuracy": 97.8,
+    "speed_score": 21,
+    "accuracy_score": 98,
+    "overall_score": 60,
+    "duration": 25.1,
+    "total_keystrokes": 45,
+    "correct_keystrokes": 44,
+    "incorrect_keystrokes": 1,
+    "top_missed_keys": [
+      [
+        "m",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T20:50:23.261253"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_003",
+    "difficulty": "beginner",
+    "wpm": 14.2,
+    "accuracy": 91.2,
+    "speed_score": 14,
+    "accuracy_score": 91,
+    "overall_score": 52,
+    "duration": 26.3,
+    "total_keystrokes": 34,
+    "correct_keystrokes": 31,
+    "incorrect_keystrokes": 3,
+    "top_missed_keys": [
+      [
+        "l",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "n",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T20:53:06.561092"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_002",
+    "difficulty": "beginner",
+    "wpm": 12.7,
+    "accuracy": 85.2,
+    "speed_score": 13,
+    "accuracy_score": 85,
+    "overall_score": 49,
+    "duration": 21.8,
+    "total_keystrokes": 27,
+    "correct_keystrokes": 23,
+    "incorrect_keystrokes": 4,
+    "top_missed_keys": [
+      [
+        "e",
+        2
+      ],
+      [
+        "P",
+        1
+      ],
+      [
+        "r",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-04T20:59:52.594231"
+  },
+  {
+    "language": "english",
+    "text_id": "quran_1_0",
+    "difficulty": "advanced",
+    "wpm": 15.6,
+    "accuracy": 84.3,
+    "speed_score": 16,
+    "accuracy_score": 84,
+    "overall_score": 50,
+    "duration": 78.7,
+    "total_keystrokes": 121,
+    "correct_keystrokes": 102,
+    "incorrect_keystrokes": 19,
+    "top_missed_keys": [
+      [
+        "ن",
+        4
+      ],
+      [
+        "م",
+        2
+      ],
+      [
+        "إ",
+        2
+      ]
+    ],
+    "timestamp": "2026-02-06T23:31:39.291529"
+  },
+  {
+    "language": "english",
+    "text_id": "quran_1_100",
+    "difficulty": "advanced",
+    "wpm": 22.5,
+    "accuracy": 93.6,
+    "speed_score": 22,
+    "accuracy_score": 94,
+    "overall_score": 58,
+    "duration": 39.0,
+    "total_keystrokes": 78,
+    "correct_keystrokes": 73,
+    "incorrect_keystrokes": 5,
+    "top_missed_keys": [
+      [
+        "و",
+        3
+      ],
+      [
+        "أ",
+        1
+      ],
+      [
+        "ض",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-06T23:35:01.765531"
+  },
+  {
+    "language": "english",
+    "text_id": "quran_2_0",
+    "difficulty": "advanced",
+    "wpm": 16.8,
+    "accuracy": 91.2,
+    "speed_score": 17,
+    "accuracy_score": 91,
+    "overall_score": 54,
+    "duration": 73.4,
+    "total_keystrokes": 113,
+    "correct_keystrokes": 103,
+    "incorrect_keystrokes": 10,
+    "top_missed_keys": [
+      [
+        "ق",
+        2
+      ],
+      [
+        "ل",
+        1
+      ],
+      [
+        "ر",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-06T23:45:31.914973"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_002",
+    "difficulty": "beginner",
+    "wpm": 11.2,
+    "accuracy": 74.2,
+    "speed_score": 11,
+    "accuracy_score": 74,
+    "overall_score": 42,
+    "duration": 24.5,
+    "total_keystrokes": 31,
+    "correct_keystrokes": 23,
+    "incorrect_keystrokes": 8,
+    "top_missed_keys": [
+      [
+        "P",
+        2
+      ],
+      [
+        "r",
+        2
+      ],
+      [
+        "a",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-06T23:46:37.386687"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_002",
+    "difficulty": "beginner",
+    "wpm": 22.4,
+    "accuracy": 95.8,
+    "speed_score": 22,
+    "accuracy_score": 96,
+    "overall_score": 59,
+    "duration": 12.3,
+    "total_keystrokes": 24,
+    "correct_keystrokes": 23,
+    "incorrect_keystrokes": 1,
+    "top_missed_keys": [
+      [
+        "r",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-06T23:48:02.930303"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_005",
+    "difficulty": "beginner",
+    "wpm": 26.4,
+    "accuracy": 100.0,
+    "speed_score": 26,
+    "accuracy_score": 100,
+    "overall_score": 63,
+    "duration": 11.8,
+    "total_keystrokes": 26,
+    "correct_keystrokes": 26,
+    "incorrect_keystrokes": 0,
+    "top_missed_keys": [],
+    "timestamp": "2026-02-06T23:50:21.895954"
+  },
+  {
+    "language": "english",
+    "text_id": "en_b_003",
+    "difficulty": "beginner",
+    "wpm": 27.2,
+    "accuracy": 96.9,
+    "speed_score": 27,
+    "accuracy_score": 97,
+    "overall_score": 62,
+    "duration": 13.7,
+    "total_keystrokes": 32,
+    "correct_keystrokes": 31,
+    "incorrect_keystrokes": 1,
+    "top_missed_keys": [
+      [
+        "l",
+        1
+      ]
+    ],
+    "timestamp": "2026-02-06T23:50:36.557840"
+  }
+]

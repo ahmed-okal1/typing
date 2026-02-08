@@ -5,6 +5,7 @@ Handles all data persistence operations including user profiles, texts, and resu
 
 import json
 import os
+import re
 from datetime import datetime
 from typing import Dict, List, Optional
 
@@ -18,6 +19,8 @@ class DataManager:
         self.texts_arabic_file = os.path.join(data_dir, "texts_arabic.json")
         self.texts_english_file = os.path.join(data_dir, "texts_english.json")
         self.results_file = os.path.join(data_dir, "results.json")
+        self.quran_raw_file = os.path.join(data_dir, "quran_raw.json")
+        self.quran_progress_file = os.path.join(data_dir, "quran_progress.json")
         
         # Create data directory if it doesn't exist
         os.makedirs(data_dir, exist_ok=True)
@@ -88,6 +91,10 @@ class DataManager:
         # Initialize results file
         if not os.path.exists(self.results_file):
             self._save_json(self.results_file, [])
+            
+        # Initialize Quran progress
+        if not os.path.exists(self.quran_progress_file):
+            self._save_json(self.quran_progress_file, {"surah_id": 1, "char_index": 0})
     
     def _load_json(self, filepath: str) -> Dict:
         """Load JSON data from file."""
@@ -246,3 +253,90 @@ class DataManager:
             "best_accuracy": max(r.get("accuracy", 0) for r in results),
             "total_time": total_time
         }
+
+    # Quran Management
+    def get_surah_list(self) -> List[Dict]:
+        """Get the list of surahs from the raw data."""
+        data = self._load_json(self.quran_raw_file)
+        if not data:
+            return []
+        
+        surahs = []
+        for s in data:
+            surahs.append({
+                "id": s["id"],
+                "name": s["name"],
+                "total_verses": s["total_verses"]
+            })
+        return surahs
+
+    def clean_quran_text(self, text: str) -> str:
+        """Clean Quranic text: remove tashkeel, numbers, brackets, and extra spaces."""
+        # Remove tashkeel (diacritics)
+        text = re.sub(r'[\u064B-\u0652]', '', text)
+        # Remove special characters like Sajda symbol ۞ and mu'araqah marks ۛ
+        text = re.sub(r'[۞۩ۛ]', '', text)
+        # Remove brackets and numbers
+        text = re.sub(r'[0-9\(\)\[\]\{\}«»]', '', text)
+        # Remove redundant spaces and normalize
+        text = re.sub(r'\s+', ' ', text).strip()
+        return text
+
+    def get_surah_full_text(self, surah_id: int) -> str:
+        """Get the full cleaned text of a surah."""
+        data = self._load_json(self.quran_raw_file)
+        if not data:
+            return ""
+        
+        surah = next((s for s in data if s["id"] == surah_id), None)
+        if not surah:
+            return ""
+        
+        full_text = " ".join([v["text"] for v in surah["verses"]])
+        return self.clean_quran_text(full_text)
+
+    def get_surah_chunk(self, surah_id: int, char_start: int, length: int = 100) -> Dict:
+        """Get a chunk of 100 characters from a surah."""
+        full_text = self.get_surah_full_text(surah_id)
+        if not full_text:
+            return None
+        
+        # Ensure we don't go out of bounds
+        text_len = len(full_text)
+        if char_start >= text_len:
+            return None
+            
+        # Try to find a space near the 100 char limit to avoid cutting words
+        end_pos = char_start + length
+        if end_pos < text_len:
+            # Look for the last space within the limit
+            last_space = full_text.rfind(' ', char_start, end_pos + 1)
+            if last_space != -1 and last_space > char_start:
+                end_pos = last_space
+            else:
+                # If no space found, look for first space after limit (to at least finish the word)
+                # but user asked for "100 letters", so let's try to not exceed it if possible, 
+                # but "last word complete" means we should probably shrink to the last space.
+                pass
+                
+        chunk = full_text[char_start:end_pos].strip()
+        
+        return {
+            "surah_id": surah_id,
+            "text": chunk,
+            "char_start": char_start,
+            "char_end": char_start + len(chunk) + 1, # +1 for the space usually
+            "is_last": char_start + len(chunk) + 1 >= text_len
+        }
+
+    def save_quran_progress(self, surah_id: int, char_index: int):
+        """Save the last reached position in the Quran."""
+        self._save_json(self.quran_progress_file, {
+            "surah_id": surah_id, 
+            "char_index": char_index,
+            "updated_at": datetime.now().isoformat()
+        })
+
+    def get_quran_progress(self) -> Dict:
+        """Get the saved Quran progress."""
+        return self._load_json(self.quran_progress_file)
