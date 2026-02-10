@@ -271,15 +271,27 @@ class DataManager:
         return surahs
 
     def clean_quran_text(self, text: str) -> str:
-        """Clean Quranic text: remove tashkeel, numbers, brackets, and extra spaces."""
-        # Remove tashkeel (diacritics)
-        text = re.sub(r'[\u064B-\u0652]', '', text)
-        # Remove special characters like Sajda symbol ۞ and mu'araqah marks ۛ
-        text = re.sub(r'[۞۩ۛ]', '', text)
-        # Remove brackets and numbers
-        text = re.sub(r'[0-9\(\)\[\]\{\}«»]', '', text)
+        """Clean Quranic text: remove all diacritics, Quranic marks, numbers, and brackets."""
+        # Normalize Alef Wasla to plain Alef
+        text = text.replace('\u0671', '\u0627')
+        
+        # Remove Arabic diacritics (Harakat, Shadda, etc.)
+        # Range covers standard diacritics and Quranic small marks
+        # \u0610-\u061A: Quranic small marks
+        # \u064B-\u065F: Harakat, Shadda, Sukun, Maddah, Hamza above/below
+        # \u0670: Superscript Alef
+        # \u06D6-\u06ED: Quranic pause and start/stop signs
+        text = re.sub(r'[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]', '', text)
+        
+        # Remove special characters like Sajda symbol ۞ and others not caught by range
+        text = re.sub(r'[۞۩]', '', text)
+        
+        # Remove brackets, numbers, and punctuation common in some datasets
+        text = re.sub(r'[0-9\(\)\[\]\{\}«»\.,;!؟?]', '', text)
+        
         # Remove redundant spaces and normalize
         text = re.sub(r'\s+', ' ', text).strip()
+        
         return text
 
     def get_surah_full_text(self, surah_id: int) -> str:
